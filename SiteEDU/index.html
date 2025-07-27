@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Heads - Официальный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#music">Музыка</a></li>
+                <li><a href="#concerts">Концерты</a></li>
+                <li><a href="#merch">Мерч</a></li>
+                <li class="cart-icon">
+                    <a href="#cart">🛒</a>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Dead Heads</h1>
+        <div class="hero-image"></div>
+    </section>
+
+    <section id="music">
+        <h2>Наша Музыка</h2>
+        <div class="audio-player">
+            <div class="player-container">
+                <div class="player-header">
+                    <div class="now-playing">
+                        <img src="images/album-cover.jpg" alt="Album Cover" class="album-cover">
+                        <div class="track-info">
+                            <h3 class="track-title">Название трека</h3>
+                            <p class="track-artist">Название группы</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="time-counter">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="prev-btn">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="play-pause">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <div class="volume-container">
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range" class="volume-slider" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <div class="playlist-header">
+                    <h3>Плейлист</h3>
+                </div>
+                <div class="playlist-tracks">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="concerts">
+        <h2>Предстоящие Концерты</h2>
+        <div class="concert-calendar">
+        </div>
+    </section>
+
+    <section id="merch">
+        <h2>Мерч</h2>
+        <div class="merch-grid">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dead Heads</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
